@@ -27,5 +27,6 @@ __phone:__ _+380631232946_
  ## Courses
   * Pre-intermediate English in Yappi school.
   * Pre-intermediate(hight) English in Red Arrow school.
+  
  ## Languages
  __English:__ Pre-intermediate
