@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #f5f7fa;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: Montserrat;
+        }
+        .wrepper{
+            background: #ffffff;
+            display: flex;
+            width:1200px;
+            margin: 0 auto;
+            box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+        }
+        .main-container{
+            background: #1e2939;
+            width: 370px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .my-photo{
+            width: 370px;
+        }
+        .about-me-container{
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+        .contacts-container{
+            margin-top: 60px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .contacts-title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .contacts-link{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #5b636f;
+            }
+        .contacts-link-title{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .tech-skill-title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .tech-skill-container{
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 55px;
+        }
+        .tech-skill-item{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 17px;
+            color: #09ff00;
+        }
+        .tech-skill-text{
+            color:#f0f1f2;
+        }
+        .soft-skill-title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .soft-skill-container{
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 55px;
+        }
+        .soft-skill-item{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 17px;
+            color: #09ff00;
+        }
+        .soft-skill-text{
+            color:#f0f1f2;
+        }
+        .profetion{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 23px;
+        }
+        .name{
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 89px;
+        }
+        .discription{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 24px;
+        }
+        .info-container{
+            margin-bottom: 65px;
+        }
+        .about-me-title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .projects-link{
+            color: #595959;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+
+            }
+            .tech-name
+            {
+            color: #595959;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            }
+        .project-item{
+            font-weight: 700;
+            margin-left: 17px;
+        }
+        .projects-container{
+            margin-bottom: 55px;
+        }
+        .profetion-title{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        }
+        .profetion-company{
+            color:#18009e;
+        }
+        .profetion-period{
+            color: #a8a8a8;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+        .profetion-devider
+        {
+            color: #000000;
+        }
+        .profetion-duties{
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+        .profetion-duties-item{
+            color: #595959;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 17px;
+        }
+        .dots{
+            font-weight: 100;
+        }
+        .experience-container{
+            margin-bottom: 55px;
+        }
+        .education-title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 21px;
+        }
+        .university-title{
+            color:#18009e;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        .direction-title{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!---main container -->
+    <div class="wrepper">
+        <aside class="main-container">
+
+            <img class="my-photo" src="./img/IMG_1373.JPG" alt="my photo">
+            <!---Contacts container -->
+            <address class="contacts-container">
+               <h3 class="contacts-title">Contacts</h3>
+               <div>
+                  <span class="contacts-link-title">C:</span> <a class="contacts-link" href="tel:+380631232946"> +38 063 123 29 46</a>
+               </div>
+               <div>
+                <span class="contacts-link-title">E:</span> <a class="contacts-link" href="mailto: andriisuvala@gmail.com"> andriisuvala@gmail.com</a>
+               </div>
+            </address>
+
+            <!---tech skills container -->
+            <div class="tech-skill-container">
+                <h3 class="tech-skill-title">Tech Skills</h3>
+                <ul>
+                    <li class="tech-skill-item">
+                        <span class="tech-skill-text">CADDS 5</span>
+                    </li>
+                    <li class="tech-skill-item">
+                        <span class="tech-skill-text">SolidWorks</span>
+                    </li>
+                    <li class="tech-skill-item">
+                        <span class="tech-skill-text">CATIA 4</span>
+                    </li>
+                    <li class="tech-skill-item">
+                        <span class="tech-skill-text">MAPPER</span>
+                    </li>
+                    <li class="tech-skill-item">
+                        <span class="tech-skill-text">STEPS</span>
+                    </li>
+                </ul>
+            </div>
+            <!---soft skills container -->
+            <div class="soft-skill-container">
+                <h3 class="soft-skill-title">Soft Skills</h3>
+                <ul>
+                    <li class="soft-skill-item">
+                        <span class="soft-skill-text">Scrum</span>
+                    </li>
+                    <li class="soft-skill-item">
+                        <span class="soft-skill-text">Agile</span>
+                    </li>
+                    <li class="soft-skill-item">
+                        <span class="soft-skill-text">GTD</span>
+                    </li>
+                    <li class="soft-skill-item">
+                        <span class="soft-skill-text">Teamwork</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!---about me container -->
+        <div class="about-me-container">
+            <!---about me main info container -->
+            <div class="info-container">
+                <h2 class="profetion">Resume</h2>
+                <h1 class="name">Andrii Suvala</h1>
+                <p class="discription">Now I just started learning HTML/CSS/JS and
+                     I wont I want to improve my skill using this course. I know how to work in team, how works Agile and Srum. Me goal is
+                     change my work direction</p>
+            </div>
+                <!---project container -->
+
+                <div class="projects-container">
+                    <h3 class="about-me-title">Projects</h3>
+                        <ol>
+                        <li class="project-item">
+                            <a class="projects-link">Electrical projects</a>
+                            <span class="dots">..................</span>
+                            <span><b>[</b><span class="tech-name">Avionics, Connectivity</span><b>]</b></span>
+                        </li>
+                        <li class="project-item">
+                             <a class="projects-link" >Spares</a>
+                             <span class="dots">.........................................</span>
+                             <span><b>[</b><span class="tech-name">Services engineer</span><b>]</b></span>
+                        </li>
+                        </ol>
+                </div>
+                <!---Work Experience -->
+                <div class="experience-container">
+                    <h3 class="about-me-title">Work Experience</h3>
+                    <!---comany list 1 -->
+                    <div>
+                        <h4 class="profetion-title">Services <span class="profetion-company">engineer</span></h4>
+                        <span class="profetion-period">September 2019 - up to now <span class="profetion-devider">|</span> Ukraine</span>
+
+                        <ul class = "profetion-duties">
+                           <li class="profetion-duties-item">In-service, technical document review and recommendation to our customers. </li>
+                           <li class="profetion-duties-item">Monitoring amendments to aviation law resulting from rule making and other regulatory changes.</li>
+                           <li class="profetion-duties-item">Modification and configuration control, including repairs.</li>
+                           <li class="profetion-duties-item">Direct liaison with Boeing engineering, including manufacturing and in-service support. </li>
+                        </ul>
+
+                    </div>
+                     <!---comany list 2 -->
+                     <div>
+                         <h4 class="profetion-title">Electrical  <span class="profetion-company">engineer</span></h4>
+                         <span class="profetion-period">March 2018 - August 2019 <span class="profetion-devider">|</span> Ukraine</span>
+
+                         <ul class = "profetion-duties">
+                             <li class="profetion-duties-item">Electrical/mechanical/software complete lifecycle support for bench test equipment,
+                                  including requirements development, design, build and acceptance/functional testing of equipment </li>
+                             <li class="profetion-duties-item">Perform engineering investigations with regards to aircraft integration issues as required.</li>
+                             <li class="profetion-duties-item">Development of functional-level and detail-level hardware/software requirements in conjunction with missile/platform integrated product teams. </li>
+                         </ul>
+                     </div>
+                     <!---comany list 3 -->
+                    <div>
+                        <h4 class="profetion-title">Graphic  <span class="profetion-company">assistant</span></h4>
+                        <span class="profetion-period">June 2016 - February 2017 <span class="profetion-devider">|</span> Ukraine</span>
+
+                        <ul class = "profetion-duties">
+                            <li class="profetion-duties-item">Accurately and efficiently process all incoming files for print production</li>
+                            <li class="profetion-duties-item">Evaluate all files to make sure they meet the standards for printing: file size, bleeds, crop marks, etc.</li>
+                            <li class="profetion-duties-item">Fixing files so they can move into production.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!---Education container -->
+                <div class="education-container">
+                    <h3 class="education-title">Education</h3>
+                    <h4 class="university-title">NTUU KPI</h4>
+                    <h5 class="direction-title">Machinery  engineer</h5>
+                    <span class="profetion-period">Septermber 2009 - June 2014
+                        <span class="profetion-devider">|</span> Ukraine</span>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
